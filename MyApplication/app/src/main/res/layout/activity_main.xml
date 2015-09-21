@@ -1,0 +1,81 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
+ <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+     android:weightSum="1">
+
+
+
+        <TextView
+            android:id="@+id/text_id"
+            style="@style/CustomFontStyle"
+            android:text="@string/hello_world" />
+
+
+     <Button android:id="@+id/scan_button"
+         android:layout_width="215dp"
+         android:layout_height="wrap_content"
+         style="@style/MyCustomButton"
+         android:text="scan"
+         android:layout_below="@+id/text_id"
+         android:layout_gravity="center_horizontal" />
+     <TextView
+         android:id="@+id/scan_format"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:textIsSelectable="true"
+         />
+     <TextView
+         android:id="@+id/scan_content"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:textIsSelectable="true"
+         />
+
+     <TextView
+            android:layout_width="match_parent"
+            android:layout_height="51dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+         android:id="@+id/textView" android:freezesText="true" />
+
+     <TextView
+         android:layout_width="351dp"
+         android:layout_height="wrap_content"
+         android:textAppearance="?android:attr/textAppearanceMedium"
+         android:id="@+id/textPrice"
+         android:layout_weight="0.28"  android:freezesText="true" />
+
+     <TextView
+            android:layout_width="match_parent"
+            android:layout_height="132dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+         android:id="@+id/textDiscription"
+         android:freezesText="true"  />
+
+
+
+     <Button
+         android:layout_width="327dp"
+         android:layout_height="wrap_content"
+         android:text="Select Food"
+         style="@style/MyCustomButton"
+         android:id="@+id/buttonselect"
+         android:layout_gravity="center_horizontal"/>
+     <Button
+         android:layout_width="327dp"
+         android:layout_height="wrap_content"
+         android:text="Go Web"
+         style="@style/MyCustomButton"
+         android:id="@+id/buttonUrl"
+         android:layout_gravity="center_horizontal"/>
+
+ </LinearLayout>
+
+
+</RelativeLayout>
